@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Watch Films | Neo Industries</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #eee;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #00ffe0;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #ff66cc;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    .film-list {
+      font-size: 1.5rem;
+      margin: 20px 0;
+      color: #00ccaa;
+    }
+    .episodes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .episode {
+      width: 300px;
+      background: #111;
+      border: 2px solid #00ffe0;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 0 10px #00ffe0;
+      text-align: left;
+    }
+    .episode video {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .episode-title {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #ff66cc;
+      margin-bottom: 8px;
+    }
+    .back-btn {
+      margin-top: 40px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      background: #00ffe0;
+      border: none;
+      color: #000;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 0 6px #00ffe0;
+    }
+    .back-btn:hover {
+      background-color: #00ccaa;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Available Films Right Now</h1>
+
+  <div class="film-list">Futurefall</div>
+
+  <h2>Futurefall Episodes</h2>
+
+  <div class="episodes">
+    <div class="episode">
+      <div class="episode-title">Episode 1: The Beginning</div>
+      <video controls>
+        <source src="futurefall-ep1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p>A thrilling start to the Futurefall saga.</p>
+    </div>
+
+    <div class="episode">
+      <div class="episode-title">Episode 2: Rising Shadows</div>
+      <video controls>
+        <source src="futurefall-ep2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p>The story thickens as dangers emerge.</p>
+    </div>
+
+    <!-- Add more episodes as needed -->
+  </div>
+
+  <button class="back-btn" onclick="window.location.href='index.html'">← Back to Home</button>
+
+</body>
+  </html>
