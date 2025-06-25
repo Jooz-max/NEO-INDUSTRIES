@@ -1,70 +1,100 @@
-<!<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>NEO INDUSTRIES</title>
-  <style>
-    body {
-      background-color: #000;
-      color: #eee;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    h1 {
-      font-size: 3.5rem;
-      font-weight: 900;
-      letter-spacing: 6px;
-      margin-bottom: 40px;
-      color: #00ffe0;
-    }
-    .button-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    button {
-      background: #00ffe0;
-      border: none;
-      padding: 18px 28px;
-      font-size: 1.25rem;
-      font-weight: 700;
-      border-radius: 8px;
-      color: #000;
-      cursor: pointer;
-      box-shadow: 0 0 8px #00ffe0;
-      transition: background 0.3s ease, transform 0.2s ease;
-      min-width: 180px;
-    }
-    button:hover {
-      background: #00ccaa;
-      transform: scale(1.05);
-    }
-    @media (max-width: 600px) {
-      .button-container {
-        flex-direction: column;
+<!<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8" />  
+  <title>NEO INDUSTRIES</title>  
+  <style>  
+    body {  
+      background-color: #000;  
+      color: #eee;  
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+      margin: 0;  
+      padding: 40px 20px;  
+      text-align: center;  
+    }  
+    h1 {  
+      font-size: 3.5rem;  
+      font-weight: 900;  
+      letter-spacing: 6px;  
+      margin-bottom: 40px;  
+      color: #00ffe0;  
+    }  
+    .button-container {  
+      display: flex;  
+      flex-wrap: wrap;  
+      justify-content: center;  
+      gap: 20px;  
+      max-width: 900px;  
+      margin: 0 auto;  
+    }  
+    button {  
+      background: #00ffe0;  
+      border: none;  
+      padding: 18px 28px;  
+      font-size: 1.25rem;  
+      font-weight: 700;  
+      border-radius: 8px;  
+      color: #000;  
+      cursor: pointer;  
+      box-shadow: 0 0 8px #00ffe0;  
+      transition: background 0.3s ease, transform 0.2s ease;  
+      min-width: 180px;  
+    }  
+    button:hover {  
+      background: #00ccaa;  
+      transform: scale(1.05);  
+    }  
+    @media (max-width: 600px) {  
+      .button-container {  
+        flex-direction: column;  
+      }  
+      button {  
+        min-width: auto;  
+        width: 100%;  
+      }  
+    }  
+  </style>  
+</head>  
+<body>  
+  <h1>NEO INDUSTRIES</h1>  
+  <div class="button-container">  
+    <button onclick="goTo('watch')">Watch Films</button>  
+    <button onclick="goTo('behind')">Behind the Scenes</button>  
+    <button onclick="goTo('films')">Download Films</button>  
+    <button onclick="goTo('gifs')">Download GIFs</button>  
+    <button onclick="goTo('read')">Read Comics</button>  
+    <button onclick="goTo('comics')">Download Comics</button>  
+    <button onclick="goTo('subscribe')">Subscribe</button>  
+  </div>  
+
+  <script>
+    function goTo(page) {
+      switch(page) {
+        case 'watch':
+          window.location.href = 'watch-films.html';
+          break;
+        case 'behind':
+          window.location.href = 'behind-the-scenes.html';
+          break;
+        case 'films':
+          window.location.href = 'download-films.html';
+          break;
+        case 'gifs':
+          window.location.href = 'download-gifs.html';
+          break;
+        case 'read':
+          window.location.href = 'read-comics.html';
+          break;
+        case 'comics':
+          window.location.href = 'download-comics.html';
+          break;
+        case 'subscribe':
+          window.location.href = 'subscribe.html';
+          break;
+        default:
+          alert('Page not found!');
       }
-      button {
-        min-width: auto;
-        width: 100%;
-      }
     }
-  </style>
-</head>
-<body>
-  <h1>NEO INDUSTRIES</h1>
-  <div class="button-container">
-    <button>Watch Films</button>
-    <button>Behind the Scenes</button>
-    <button>Download Films</button>
-    <button>Download GIFs</button>
-    <button>Read Comics</button>
-    <button>Download Comics</button>
-    <button>Subscribe</button>
-  </div>
-</body>
+  </script>
+</body>  
 </html>
